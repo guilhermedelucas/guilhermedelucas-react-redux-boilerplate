@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetch } from '../actions/exampleActions';
+import { fetch } from '../actions/exampleAction';
 import { Link } from 'react-router';
 
 function mapStateToProps(state) {
@@ -19,14 +19,12 @@ export class HelloWorld extends React.Component{
     }
 
     render() {
-        const { example } = this.props;
-
-            return (
-                <div className='container'>
-                    Hello { example };
-                </div>
-                )
-        }
+    const { example } = this.props;
+        return (
+            <div className='container'>
+                Hello { example };
+            </div>
+            )
     }
 }
 

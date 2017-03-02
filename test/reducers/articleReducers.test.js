@@ -1,46 +1,21 @@
-import reducer from '../../src/reducers/articleReducers'
+import reducer from '../../src/reducers/exampleReducers'
 
-describe('Article reducer', () => {
+describe('Test reducer', () => {
     it('should return the initial state', () => {
         expect(
             reducer(undefined, {})
         ).toEqual({
-            article: {
-                price: {}
-            },
-            fetched: false,
-            articleError: null
+            example: null
         })
     })
 
-    it('should handle FETCH_ARTICLE_FULFILLED', () => {
+    it('should handle FETCH', () => {
         expect(
             reducer({}, {
-                type: "FETCH_ARTICLE_FULFILLED"
+                type: "FETCH"
             })
         ).toEqual({
-            fetched: true,
-            article: undefined
-        })
-    })
-
-    it('should handle FETCH_RTICLE_REJECTED', () => {
-        expect(
-            reducer({}, {
-                type: "FETCH_ARTICLE_REJECTED"
-            })
-        ).toEqual({
-            articleError: true
-        })
-    })
-
-    it('should handle CLEAR_ARTICLE_ERROR', () => {
-        expect(
-            reducer({}, {
-                type: "CLEAR_ARTICLE_ERROR"
-            })
-        ).toEqual({
-            articleError: null
+            example: undefined
         })
     })
 })

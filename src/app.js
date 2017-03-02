@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import HelloWorld from './components/exampleComponent';
 import { AppContainer } from 'react-hot-loader';
 import { Provider } from 'react-redux';
-import { fetchCart } from './actions/articleActions';
 import store from './store';
 import { Router, Route, browserHistory } from 'react-router';
 
