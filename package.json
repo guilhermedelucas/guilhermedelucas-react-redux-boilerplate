@@ -1,5 +1,5 @@
 {
-  "name": "MONOQI_challenge1",
+  "name": "ACME_TECH_SHOPT",
   "authot": "Guilherme Gomes de Lucas",
   "version": "1.0.0",
   "description": "",
@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "npm test -- --watch",
-    "build": "node build.js",
+    "build": "NODE_ENV=production ./webpack.config.js --progress --colors",
     "start": "node index.js",
     "serve": "webpack-dev-server --hot --inline --content-base ./src --open"
   },

@@ -1,7 +1,9 @@
 var express = require('express');
 var app = express();
 
-if (process.env.NODE_ENV != 'production') {
+process.env.NODE_ENV = 'production';
+
+if (process.env.NODE_ENV === 'production') {
     app.use(require('./webpack.config.js'));
 }
 
