@@ -1,5 +1,5 @@
 {
-  "name": "guuilhermedelucas-REACT-REDUX-BOLERPLATER",
+  "name": "guilhermedelucas-REACT-REDUX-BOLERPLATER",
   "authot": "Guilherme Gomes de Lucas",
   "version": "1.0.0",
   "description": "",
@@ -9,7 +9,6 @@
     "test:watch": "npm test -- --watch",
     "build": "NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors",
     "start": "node index.js",
-    "serve": "webpack-dev-server --hot --inline --content-base ./src --open"
   },
   "keywords": [],
   "author": "",
@@ -32,10 +31,8 @@
     "redux": "^3.6.0",
     "redux-logger": "^2.8.1",
     "redux-thunk": "^2.2.0",
-    "semantic-ui-react": "^0.64.3",
     "webpack": "^1.14.0",
     "webpack-dev-middleware": "^1.8.4",
-    "yamljs": "^0.2.8"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
@@ -50,7 +47,6 @@
     "nock": "^9.0.8",
     "react-hot-loader": "^3.0.0-beta.6",
     "redux-mock-store": "^1.2.2",
-    "url-loader": "^0.5.8",
     "webpack": "^2.1.0-beta.27",
     "webpack-dev-server": "^2.1.0-beta.11"
   }
