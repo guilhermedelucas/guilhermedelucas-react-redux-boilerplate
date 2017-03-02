@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "npm test -- --watch",
-    "build": "NODE_ENV=production ./webpack.config.js --progress --colors",
+    "build": "NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors",
     "start": "node index.js",
     "serve": "webpack-dev-server --hot --inline --content-base ./src --open"
   },
