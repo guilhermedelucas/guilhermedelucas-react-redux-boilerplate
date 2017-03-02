@@ -1,0 +1,219 @@
+a { color:black; }
+
+a:hover { color:gray;
+    text-decoration: none;
+ }
+
+hr { margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+h1 {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+ul {
+  padding-left: 15px;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    padding: 0px;
+}
+
+.navbar {
+    margin: 10px 0px 0px 0px;
+    padding: 0px 20px;
+    min-height: 0px;
+}
+
+.row{
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+}
+
+.light-text {
+    font-weight: lighter;
+}
+
+.catalog-item {
+    padding: 10px 10px 10px 0px;
+}
+
+.catalog-item h1 {
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.catalog-item-name {
+    padding-left: 10px;
+}
+
+.cart-icon {
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+.flex-space {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.border-box {
+    border: 1px solid rgba(93, 93, 93, 0.3);
+    padding: 6px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.border-box h5 {
+    padding: 0;
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+    margin: 0;
+}
+
+/*/////////////////////ARTICLES///////////////////////*/
+
+.article-item-description h1 {
+    margin-top: 0px;
+}
+
+.article-item {
+    padding: 10px 10px 10px 0px;
+}
+
+
+.button-cart {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.button-cart {
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.button-cart:disabled {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: 1px solid gray;
+    color: white
+}
+
+.button-checkout {
+    background-color: white;
+    border: 1px solid gray;
+    margin: 10px 0px 0px 10px;
+}
+
+.checkout-total h3 {
+    margin: 0px;
+    text-align: right;
+}
+
+.checkout-item {
+    padding-bottom: 10px;
+}
+
+
+
+.flex-row {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-row h1 {
+    margin: 0px;
+}
+
+.flex-column {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.articles-total {
+    border-left: 1px solid gray;
+    padding: 0px 20px;
+    flex-grow: 1;
+}
+
+.button-align {
+    align-items: center;
+}
+
+.button-align h1{
+    margin: 0px;
+}
+
+.image-cart {
+    margin-right: 15px;
+}
+
+.cart-item-name h1{
+    margin: 0px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+cart-item-name {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+@media screen and (max-width: 767px) {
+    .row {
+        margin: 0px;
+    }
+
+    .navbar {
+        margin: 10px 0px 0px 0px;
+        padding: 0px 20px 10px 20px;
+        min-height: 0px;
+    }
+
+    .container {
+        padding: 0px;
+    }
+
+    .catalog-item {
+        padding: 10px 0px;
+    }
+
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+        position: relative;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+
+    .article-item-description {
+        padding: 0px 10px;
+    }

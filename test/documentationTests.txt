@@ -1,0 +1,52 @@
+I split the tests in 3 sections, the action, the reducers and the components:
+Basically the actions, receive a dispatch from the component, and execute a function that triggers and action to the reducers. The reducers will change the store data and make it globally for all the application. On the actions are the most important tests because they manage the ajax request for the server.
+The reducers are more simple, just receive the data and set it to the global store.
+
+
+THE ACTIONS:
+
+    - ARTICLE -
+    * Action clearArticleError: to clear the error message from the store, and allow receive aditional errors when load another page.
+
+    * Action fetchArticles:
+        - tested code 200, response with object, and trigger the FETCH_ARTICLE_FULFILLED
+        - tested request error, response with empty object and trigger FETCH_ARTICLE_FULFILLED
+        - tested code 400, trigger FETCH_ARTICLE_REJECTED
+        - tested code 500, trigger FETCH_ARTICLE_REJECTED
+
+    - CATALOG -
+    * Action fetchCatalog:
+        - tested code 200, response with object, and trigger the FETCH_CATALOG_FULFILLED
+        - tested request error, response with empty object and trigger FETCH_CATALOG_FULFILLED
+        - tested code 400, trigger FETCH_CATALOG_REJECTED
+        - tested code 500, trigger FETCH_CATALOG_REJECTED
+
+    - CART -
+    * Action clearCartError:
+        - tested sync action to return the CLEAR_CART_ERROR when unmounting the components;
+    * Action fetchCart
+        - tested code 200, response with object, and trigger the TECH_CART_FULFILLED
+        - tested code 404, response with FETCH_CART_REJECTED
+    * Action ADD_TO_CART
+        -tested code 200, in certain situations and return ADD_TO_CART action;
+            - add when empty cart
+            - cart has items
+            - invalid sku, respond the last cart
+            - increase quantity by one, with item is already on the cart
+        - tested code 400, trigger ADD_TO_CART_FAIL with the article that fail to display on the dom
+    * Action UPDATE_QUANTITY
+        -tested code 200, more than one item, and one items.
+        Returns UPDATE_CART_QUANTITY
+        -code 400, trigger UPDATE_CART_QUANTITY_FAIL and keep the last cart
+        - function removeFromCart(), that removes the article from cart, no matter how items, triggered on the checkout screen. Returns UPDATE_CART_QUANTITY
+
+
+
+THE REDUCERS:
+    Reducers are really simple for testing, they just have straight forward data, just check the income data, and the output. A consistent action creation tests can validate the reducer tests.
+    On all these test, the action.payload received by the reducers are not able to identify the data, as the reducer without the action are just objects or undefined actions.
+
+
+THE COMPONENTS:
+    Unfortunatelly I could find a solution to mock the dispatchers and execute the apropriate tests on the components.
+    I still looking for that solution, but I prefer deliver some material to you.
