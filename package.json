@@ -1,5 +1,5 @@
 {
-  "name": "ACME_TECH_SHOPT",
+  "name": "guuilhermedelucas-REACT-REDUX-BOLERPLATER",
   "authot": "Guilherme Gomes de Lucas",
   "version": "1.0.0",
   "description": "",
@@ -47,7 +47,6 @@
     "babel-preset-stage-2": "^6.22.0",
     "enzyme": "^2.7.1",
     "jest": "^19.0.2",
-    "mocha": "^3.2.0",
     "nock": "^9.0.8",
     "react-hot-loader": "^3.0.0-beta.6",
     "redux-mock-store": "^1.2.2",

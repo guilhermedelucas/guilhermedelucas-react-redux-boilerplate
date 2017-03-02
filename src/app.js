@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Catalog from './components/Catalog';
-import Article from './components/Article';
-import Checkout from './components/Checkout';
+import HelloWorld from './components/exampleComponent';
 import { AppContainer } from 'react-hot-loader';
 import { Provider } from 'react-redux';
 import { fetchCart } from './actions/articleActions';
@@ -16,10 +14,7 @@ ReactDOM.render(
     <AppContainer>
         <Provider store={store}>
             <Router history={browserHistory}>
-                <Route path="/" component={Catalog} />
-                <Route path="/article/:sku" component={Article} />
-                <Route path="/checkout/cart" component={Checkout} />
-
+                <Route path="/" component={HelloWorld} />
             </Router>
         </Provider>
     </AppContainer>,
@@ -31,8 +26,7 @@ if (module.hot) {
     ReactDOM.render(
         <AppContainer>
             <Router history={browserHistory}>
-                <Route path="/" component={Catalog} />
-                <Route path="/article/:sku" component={Article} />
+                <Route path="/" component={HelloWorld} />
             </Router>
         </AppContainer>,
     app);

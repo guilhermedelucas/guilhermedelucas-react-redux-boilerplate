@@ -1,6 +1,0 @@
-To run the ACME tech store I'm presuming you have npm and node installed in your computer:
-
-1 - Type npm install inside the app folder;
-2 - After instalation complete, type node index.js;
-3 - Now on the browser type localhost:8080;
-4 - To execute the test just type npm test inside the app's folder;
